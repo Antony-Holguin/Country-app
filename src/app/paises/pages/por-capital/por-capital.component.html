@@ -1,2 +1,7 @@
-<app-pais-tabla></app-pais-tabla>
-<app-input-component></app-input-component>
+
+<app-input-component (onEnter)="buscar($event)"></app-input-component>
+<div *ngIf="hayError" class="alert alert-danger">
+    No results con "{{ termino }}""
+  </div>
+
+<app-pais-tabla [paises]="capitales"></app-pais-tabla>
