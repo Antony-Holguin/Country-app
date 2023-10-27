@@ -1,5 +1,7 @@
-
-<app-input-component (onEnter)="buscar($event)"></app-input-component>
+<h2>Por capital</h2>
+<hr>
+<app-input-component (onEnter)="buscar($event)" placeholder="Buscar por capital"></app-input-component>
+<hr>
 <div *ngIf="hayError" class="alert alert-danger">
     No results con "{{ termino }}""
   </div>
